@@ -149,6 +149,9 @@
         <video id="teaser" autoplay muted loop playsinline height="100%">
           <source src="./static/videos/demo-kitti.mp4" type="video/mp4">
         </video>
+        <video id="teaser" autoplay muted loop playsinline height="100%">
+          <source src="./static/videos/nusc-1.mp4" type="video/mp4">
+        </video>
         <h2 class="subtitle has-text-centered">
           <span class="dnerf">Let Occ Flow</span> achieves detailed depth, accurate 3D occupancy and occupancy flow
           prediction.
@@ -172,8 +175,8 @@
               the first self-supervised work for joint 3D occupancy and occupancy flow prediction
               using only camera inputs, eliminating the need for 3D annotations. Utilizing
               TPV for unified scene representation and deformable attention layers for feature
-              aggregation, our approach incorporates a backward-forward temporal attention
-              module to capture dynamic object dependencies, followed by a 3D refine module
+              aggregation, incorporates a novel attention-based temporal fusion module 
+              to capture dynamic object dependencies, followed by a 3D refine module
               for fine-gained volumetric representation. Besides, our method extends differentiable 
               rendering to 3D volumetric flow fields, leveraging zero-shot 2D segmentation 
               and optical flow cues for dynamic decomposition and motion optimization.
@@ -290,7 +293,7 @@
               supervision, our method greatly enhances the geometric representation capabilities, compared to other
               rendering-based methods.
             </p>
-            <img src="./static/images/occ-semantic.png" class="interpolation-image"
+            <img src="./static/images/result-semkitti.png" class="interpolation-image"
               alt="Interpolate start reference image." />
           </div>
           <!--/ Re-rendering. -->
@@ -302,9 +305,9 @@
               strategy. And compared with 3D supervised OccNet, our approach achieves comparable
               performance on nuScenes, validating the effectiveness of our self-supervised training paradigm.
             </p>
-            <img src="./static/images/flow-kitti.png" class="interpolation-image"
+            <img src="./static/images/result-mot.png" class="interpolation-image"
               alt="Interpolate start reference image." />
-            <img src="./static/images/flow-nusc.png" class="interpolation-image"
+            <img src="./static/images/result-nusc.png" class="interpolation-image"
               alt="Interpolate start reference image." />
           </div>
 
